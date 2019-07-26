@@ -1,0 +1,51 @@
+Starting up the Payroll System:
+
+Step 0: Recognize the directory for files
+	Open any data file using the terminal or command prompt
+	The output should look like this (/Users/ASUS/Desktop/Payroll System/July 22-28/Potato.csv)
+	Recognize the User Name: /Users/(User Name)/Desktop/Payroll System/July 22-28/Potato.csv
+	This will be asked from in each Python notebook
+
+Step 1: Go to folder "1 Information CSVs" and open "Employee-Information"
+	Edit information in "Employee-Information" to suit the employees of the company
+
+Step 2: Run "1 Tax Calculator.ipnyb"
+	This will calculate each employee's tax information with respect to there monthly salary
+	The notebook will output a csv named "Employee-Information-With-Tax"
+
+Step 3: In folder "1 Information CSVs", open "Standard-Clock-Hours"
+	Edit information in "Standard-Clock-Hours" to suit the company's clock-in and clock-out hours
+
+Step 4: Make a folder for each operating week
+	Use folder "July 22-28" as an example
+	The "folder name" folder should contain folders: 
+		1. In-"folder name"
+		2. Out-"folder name"
+		3. html-"folder name"
+		
+Step 5: Run "2 In-Day Format.ipynb"
+	This will generate a formated csv that is editable
+	This should be the format for all INPUTS
+
+Step 6: Make sure to put all INPUTS are in the folder - In-"folder name"
+
+Step 7: When one week of INPUTS have been collected, run "3 Output Notebook.ipynb"
+	This notebook will ask for the "folder name" and "input name"
+	(i.e. "July 22-28" and "July 22")
+
+Step 8: Once the Out-"folder name" contains the OUTPUTS run "4 One Week Statistic Generator.ipynb"
+	This notebook will ask for the "folder name" and each name of the INPUTS
+	The notebook will also ask for a name (for the whole week's worth of info = One Week Statistic)
+
+Step 9: When the One Week Statistic has been made, run 5 Pay Slip Generator.ipynb
+	This notebook will ask for the "folder name"
+	The end output will create html files for each employee's payslip in folder: html-"folder name"
+
+Step 10: With the html's, the company can print out each payslip
+
+Notes:	If the company wants to issue debt to an employee, follow the format in folder "3 Debt Info"
+	Each employee will have their own csv containing all the debts they have
+	The name of this csv should be DebtTracker_"Employee ID Number" (i.e. DebtTracker_10000000)
+	When there is debt remaining, "3 Output Notebook.ipynb" will take into account remaining debt
+
+
